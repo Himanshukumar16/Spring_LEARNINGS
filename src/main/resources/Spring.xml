@@ -4,11 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id = "alien" class = "Code.Alien">
-        <constructor-arg value="18"/>
+<!--        <constructor-arg value="18"/>-->
 <!--        <property name="Rollno" value="18"/>-->
-        <property name="lap" ref="laptop"/>
+        <property name="com" ref="Computer"/>
     </bean>
 
+    <bean id = "com" class = "Code.Computer"/>
+
+    <bean id = "desk" class = "Code.Desktop"/>
     <bean id = "laptop" class = "Code.Laptop"/>
 <!-- ref for refrence object and value for primitive data type-->
 </beans>
