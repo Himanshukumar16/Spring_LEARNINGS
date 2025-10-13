@@ -3,15 +3,18 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "alien" class = "Code.Alien">
+    <bean id = "alien" class = "Java_with_XML.Alien">
 <!--        <constructor-arg value="18"/>-->
 <!--        <property name="Rollno" value="18"/>-->
-        <property name="com" ref="Computer"/>
+        <property name="com" ref="desk"/>
+<!--        it is used if we want to create a com variable with Desktop reference-->
+
+<!--        <property name="com" ref="laptop"/>-->
+<!--        it is used if we want to create a com variable with laptop reference-->
+
     </bean>
 
-    <bean id = "com" class = "Code.Computer"/>
-
-    <bean id = "desk" class = "Code.Desktop"/>
-    <bean id = "laptop" class = "Code.Laptop"/>
+    <bean id = "desk" class = "Java_with_XML.Desktop"/>
+    <bean id = "laptop" class = "Java_with_XML.Laptop"/>
 <!-- ref for refrence object and value for primitive data type-->
 </beans>
