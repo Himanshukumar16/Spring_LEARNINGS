@@ -1,4 +1,4 @@
-package Java_with_XML;
+package code.Java_with_XML;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
